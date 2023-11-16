@@ -1,15 +1,15 @@
-import { experiences } from "../_lib/experiences";
+import { experienceList } from "../_lib/experience";
 import { Card } from "./Card";
 import { CompanyLogo } from "./CompanyLogo";
 import { Title } from "./Title";
 import { CgPin, CgWorkAlt, CgCalendar } from "react-icons/cg";
 
-export const Experiences = () => (
+export const Experience = () => (
   <Card>
     <div className="flex flex-col gap-4">
-      <Title level="h2">Expériences</Title>
+      <Title level="h2">Expérience</Title>
 
-      {experiences.map((experience, experienceKey) => (
+      {experienceList.map((experience, experienceKey) => (
         <>
           <div key={experienceKey}>
             <div className="flex gap-4">
@@ -65,7 +65,7 @@ export const Experiences = () => (
               </div>
             </div>
           </div>
-          {experienceKey < experiences.length - 1 && (
+          {experienceKey < experienceList.length - 1 && (
             <hr key={`${experienceKey}-hr`} />
           )}
         </>

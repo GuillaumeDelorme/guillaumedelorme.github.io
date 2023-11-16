@@ -8,7 +8,7 @@ export type Education = {
   period: string;
 };
 
-export const education: Education[] = [
+export const educationList: Education[] = [
   {
     diploma:
       "Master informatique spécialité Ingénierie des Systèmes Intelligents",

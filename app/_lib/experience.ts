@@ -11,7 +11,7 @@ export type Experience = {
   technologies: string[];
 };
 
-export const experiences: Experience[] = [
+export const experienceList: Experience[] = [
   {
     title: "Senior Lead Developer",
     companyName: "Check and Visit",

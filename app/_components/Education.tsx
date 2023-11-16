@@ -1,4 +1,4 @@
-import { education as educationList } from "../_lib/education";
+import { educationList } from "../_lib/education";
 import { Card } from "./Card";
 import { Title } from "./Title";
 import { CgPin, CgReadme, CgCalendar } from "react-icons/cg";
