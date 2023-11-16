@@ -1,3 +1,4 @@
+import React from "react";
 import { experienceList } from "../_lib/experience";
 import { Card } from "./Card";
 import { CompanyLogo } from "./CompanyLogo";
@@ -10,8 +11,8 @@ export const Experience = () => (
       <Title level="h2">Expérience</Title>
 
       {experienceList.map((experience, experienceKey) => (
-        <>
-          <div key={experienceKey}>
+        <React.Fragment key={experienceKey}>
+          <div>
             <div className="flex gap-4">
               <div className="flex flex-none flex-col items-center gap-3">
                 <CompanyLogo company={experience.companyLogo} size="medium" />
@@ -65,10 +66,8 @@ export const Experience = () => (
               </div>
             </div>
           </div>
-          {experienceKey < experienceList.length - 1 && (
-            <hr key={`${experienceKey}-hr`} />
-          )}
-        </>
+          {experienceKey < experienceList.length - 1 && <hr />}
+        </React.Fragment>
       ))}
     </div>
   </Card>

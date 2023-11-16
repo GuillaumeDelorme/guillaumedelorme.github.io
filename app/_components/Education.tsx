@@ -1,3 +1,4 @@
+import React from "react";
 import { educationList } from "../_lib/education";
 import { Card } from "./Card";
 import { Title } from "./Title";
@@ -10,8 +11,8 @@ export const Education = () => (
       <Title level="h2">Formation</Title>
 
       {educationList.map((education, educationKey) => (
-        <>
-          <div key={educationKey}>
+        <React.Fragment key={educationKey}>
+          <div>
             <div className="flex gap-4">
               <UniversityLogo university={education.universityLogo} />
 
@@ -35,10 +36,8 @@ export const Education = () => (
               </div>
             </div>
           </div>
-          {educationKey < educationList.length - 1 && (
-            <hr key={`${educationKey}-hr`} />
-          )}
-        </>
+          {educationKey < educationList.length - 1 && <hr />}
+        </React.Fragment>
       ))}
     </div>
   </Card>
