@@ -13,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className="bg-gray-100 antialiased">{children}</body>
+      <body className="flex w-full justify-center bg-gray-100 antialiased">
+        {children}
+      </body>
     </html>
   );
 }
