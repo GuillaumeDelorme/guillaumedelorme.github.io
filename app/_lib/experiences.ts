@@ -1,0 +1,226 @@
+import { Company } from "../_components/CompanyLogo";
+
+export type Experience = {
+  title: string;
+  companyName: string;
+  companyLogo: Company;
+  subCompanyLogos?: Company[];
+  location: string;
+  period: string;
+  missions: string[];
+  technologies: string[];
+};
+
+export const experiences: Experience[] = [
+  {
+    title: "Senior Lead Developer",
+    companyName: "Check and Visit",
+    companyLogo: "check-and-visit",
+    location: "Rennes, France",
+    period: "Sept. 2020 - Aujourd'hui",
+    missions: [
+      "Développement d'un viewer 3D d'actif immobilier",
+      "Développement d'un viewer 3D de gaussian splatting (InSpacer)",
+      "Développement et maintenance d'applications web (infrastructure / backend / frontend)",
+      "Team lead",
+      "Support aux équipes",
+      "Architecture",
+    ],
+    technologies: [
+      "Déploiement / infrastructure : Amazon Web Services / Vercel / Pulumi",
+      "Base de données : PostgreSQL / MariaDB / DynamoDB",
+      "Langages : TypeScript / JavaScript",
+      "Backend : Serverless framework / Nest.js / MikroORM",
+      "Frontend : Vue / Nuxt / React / Next / Three.js / React Three Fiber",
+    ],
+  },
+  {
+    title:
+      "Responsable technique du centre de service Documentum (Orano, Framatome, Enedis et EDF)",
+    companyName: "Capgemini",
+    companyLogo: "capgemini",
+    subCompanyLogos: ["orano", "framatome", "enedis", "edf"],
+    location: "Rennes, France",
+    period: "Sept. 2018 - Août 2020",
+    missions: [
+      "Conception (rédaction de spécifications fonctionnelles et techniques, étude des besoins et analyse d'impacts)",
+      "Développement (configuration D2, developpements DFC / D2 / Webtop / Webservices Spring Boot et Axis)",
+      "Suivi et qualification des tickets",
+      "Support aux équipes et formations",
+      "Expertise Documentum",
+    ],
+    technologies: [
+      "Documentum 6.5, 7.1, 7.2, 7.3 et 16.4",
+      "Documentum D2 4.2, 4.6, 4.7 et 16.4",
+      "Documentum Webtop 6.6 et 6.8",
+      "Adobe LifeCycle",
+      "Java 6, 7 et 8",
+      "Gradle",
+      "Javascript (ES6 / VueJS)",
+      "Base de données Oracle",
+      "Linux Red Hat",
+    ],
+  },
+  {
+    title: "Developpeur Java / Expert Documentum pour BNPP",
+    companyName: "Capgemini",
+    companyLogo: "capgemini",
+    subCompanyLogos: ["bnpp"],
+    location: "Rennes, France",
+    period: "Sept. 2017 - Sept. 2018",
+    missions: [
+      "Migration d'applications Documentum Webtop 5.3 vers FileNet 5.2.1",
+      "Outillage d'injection de documents dans FileNet",
+      "Batch de reporting FileNet",
+    ],
+    technologies: [
+      "Documentum 5.3",
+      "Documentum Webtop 5.3",
+      "FileNet 5.2.1",
+      "Java 8",
+      "Maven",
+      "Base de données Oracle",
+      "Base de données MongoDB",
+      "Spring Boot",
+      "Linux Red Hat",
+    ],
+  },
+  {
+    title: "Responsable Technique Documentum pour Areva",
+    companyName: "Capgemini",
+    companyLogo: "capgemini",
+    subCompanyLogos: ["areva"],
+    location: "Rennes, France",
+    period: "Oct. 2016 - Sept. 2017",
+    missions: [
+      "Migrations d'une application de GED de Documentum D2 2.6 puis vers Documentum D2 4.6",
+      "Migrations d'une application de GED de Documentum D2 2.6 puis vers Documentum D2 4.7",
+      "Développement de services REST avec Swagger / RESTEasy",
+      "Développement de widgets externes D2 avec VueJS",
+    ],
+    technologies: [
+      "Documentum 7.2 et 7.3",
+      "Documentum D2 4.6 et D2 4.7",
+      "Java 7",
+      "Javascript (ES6 / VueJS)",
+      "Swagger",
+      "Base de données Oracle",
+      "Base de données OrientDB",
+      "Linux Red Hat",
+    ],
+  },
+  {
+    title: "Développeur Java pour le Crédit Agricole",
+    companyName: "Capgemini",
+    companyLogo: "capgemini",
+    subCompanyLogos: ["credit-agricole"],
+    location: "Rennes, France",
+    period: "Janv. 2016 - Sept. 2016",
+    missions: [
+      "Refactoring du code Java de plusieurs applications de GED et web services afin d'améliorer la maintenance",
+      "Industrialisation du packaging des applications, des tests unitaires et de la gestion des dépendances via Maven",
+      "Développement d'un nouveau socle pour les futures applications de GED",
+      "Développement de web services pour des nouvelles applications de GED",
+    ],
+    technologies: [
+      "Java",
+      "J2EE",
+      "Hibernate",
+      "Maven",
+      "Struts",
+      "Javascript",
+      "Base de données Microsoft SQL Server",
+      "Windows Server",
+    ],
+  },
+  {
+    title:
+      "Consultant Documentum sur une TMA pour RTE (Réseau de transport d'électricité)",
+    companyName: "Capgemini",
+    companyLogo: "capgemini",
+    subCompanyLogos: ["rte"],
+    location: "Rennes, France",
+    period: "Mars 2013 - Janv. 2016",
+    missions: [
+      "Migrations d'une application de case management de Documentum xCP 2.0 vers Documentum xCP 2.2",
+      "Migrations d'une application de GED de Documentum Webtop 6.5 vers Documentum D2 4.1 puis vers Documentum D2 4.2",
+      "Migrations d'une application de gestion de documents techniques de Documentum Webtop 6.5 vers Documentum D2 4.1 puis vers Documentum D2 4.2",
+      "Migrations d'une application de gestion de factures de Documentum Webtop 6.5 vers Documentum Webtop 6.7",
+      "MCO (Maintenance en Condition Opérationnelle), évolutions et corrections d'anomalies sur 5 applications (deux applications Documentum D2 4.2 / une application Documentum Webtop 6.7 / une application Documentum xCP 2.2 / une application Eversuite 5.1) ",
+    ],
+    technologies: [
+      "Documentum 6.5, 6.7, 7.0 et 7.1",
+      "Documentum xCP 2.0 et xCP 2.2",
+      "Documentum D2 4.1 et D2 4.2",
+      "Documentum Webtop 6.5 et 6.7",
+      "EverSuite 5.1",
+      "Java",
+      "Javascript (Ext JS / Chartist.js)",
+      "Base de données Oracle",
+      "Red Hat Linux",
+    ],
+  },
+  {
+    title: "Stagiaire",
+    companyName: "Capgemini",
+    companyLogo: "capgemini",
+    subCompanyLogos: ["rte"],
+    location: "Rennes, France",
+    period: "Mars 2013 - Août 2013",
+    missions: [
+      "Migration d'une application de case management de Documentum 5.3 vers Documentum 7.0 / xCP 2.0",
+      "Développement d'un prototype",
+      "Rédaction des spécifications fonctionnelles",
+      "Développement des scripts de migration des données",
+    ],
+    technologies: [
+      "Documentum 7.0",
+      "Documentum xCP 2.0",
+      "Java",
+      "Javascript (Ext JS)",
+      "Base de données Oracle",
+      "Red Hat Linux",
+      "HP Quality Center",
+    ],
+  },
+  {
+    title: "Stagiaire",
+    companyName: "MMA",
+    companyLogo: "mma",
+    location: "Le Mans, France",
+    period: "Avr. 2012 - Août 2012",
+    missions: [
+      "Recueillir les besoins des utilisateurs",
+      "Établir le cahier des charges",
+      "Développer deux intranets",
+      "Fournir les documentations sur les développements effectués et études réalisées",
+    ],
+    technologies: [
+      "Flex",
+      "Java",
+      "Base de données Oracle",
+      "Framework 3M@",
+      "IBM RSM",
+      "Maven",
+    ],
+  },
+  {
+    title: "Stagiaire",
+    companyName: "MMA",
+    companyLogo: "mma",
+    location: "Le Mans, France",
+    period: "Avr. 2010 - Juin 2010",
+    missions: [
+      "Développer un intranet en fonction des spécifications",
+      "Fournir les documentations sur les développements effectués",
+    ],
+    technologies: [
+      "Flex",
+      "Java",
+      "Base de données Oracle",
+      "Framework 3M@",
+      "IBM Rose",
+      "Maven",
+    ],
+  },
+];
