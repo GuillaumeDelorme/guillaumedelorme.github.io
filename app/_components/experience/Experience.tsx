@@ -29,7 +29,7 @@ export const Experience = () => (
               <div className="flex w-full flex-col gap-3 text-sm">
                 <Title level="h3">{experience.title}</Title>
 
-                <div className="flex gap-4 text-sm font-medium text-gray-500">
+                <div className="flex flex-wrap gap-4 text-sm font-medium text-gray-500">
                   <div className="flex items-center justify-center gap-1">
                     <CgWorkAlt />
                     <div>{experience.companyName}</div>

@@ -14,12 +14,14 @@ export const Education = () => (
         <React.Fragment key={educationKey}>
           <div>
             <div className="flex gap-4">
-              <UniversityLogo university={education.universityLogo} />
+              <div>
+                <UniversityLogo university={education.universityLogo} />
+              </div>
 
               <div className="flex w-full flex-col gap-3 text-sm">
                 <Title level="h3">{education.diploma}</Title>
 
-                <div className="flex gap-4 text-sm font-medium text-gray-500">
+                <div className="flex flex-wrap gap-4 text-sm font-medium text-gray-500">
                   <div className="flex items-center justify-center gap-1">
                     <CgReadme />
                     <div>{education.universityName}</div>
