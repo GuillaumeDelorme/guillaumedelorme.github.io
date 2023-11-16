@@ -1,5 +1,5 @@
-import { Education } from "./_components/Education";
-import { Experience } from "./_components/Experience";
+import { Education } from "./_components/education/Education";
+import { Experience } from "./_components/experience/Experience";
 
 export default function Home() {
   return (

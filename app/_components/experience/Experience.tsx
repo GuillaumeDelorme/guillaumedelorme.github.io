@@ -1,8 +1,8 @@
 import React from "react";
-import { experienceList } from "../_lib/experience";
-import { Card } from "./Card";
+import { experienceList } from "../../_lib/experience";
+import { Card } from "../common/Card";
 import { CompanyLogo } from "./CompanyLogo";
-import { Title } from "./Title";
+import { Title } from "../common/Title";
 import { CgPin, CgWorkAlt, CgCalendar } from "react-icons/cg";
 
 export const Experience = () => (

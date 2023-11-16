@@ -1,4 +1,4 @@
-import { University } from "../_components/UniversityLogo";
+import { University } from "../_components/education/UniversityLogo";
 
 export type Education = {
   diploma: string;

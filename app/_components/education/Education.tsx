@@ -1,7 +1,7 @@
 import React from "react";
-import { educationList } from "../_lib/education";
-import { Card } from "./Card";
-import { Title } from "./Title";
+import { educationList } from "../../_lib/education";
+import { Card } from "../common/Card";
+import { Title } from "../common/Title";
 import { CgPin, CgReadme, CgCalendar } from "react-icons/cg";
 import { UniversityLogo } from "./UniversityLogo";
 

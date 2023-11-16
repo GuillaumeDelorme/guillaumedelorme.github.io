@@ -1,4 +1,4 @@
-import { Company } from "../_components/CompanyLogo";
+import { Company } from "../_components/experience/CompanyLogo";
 
 export type Experience = {
   title: string;
