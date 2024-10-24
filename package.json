@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "gh-pages": "pnpm build && echo guillaume.delorme.io > ./out/CNAME && touch ./out/.nojekyll && gh-pages -b gh-pages --dotfiles -d out"
+    "gh-pages": "pnpm build && echo guillaume.delorme.dev > ./out/CNAME && touch ./out/.nojekyll && gh-pages -b gh-pages --dotfiles -d out"
   },
   "dependencies": {
     "next": "14.0.2",
